@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <!-- Rock paper scissors icons created by Freepik - Flaticon -->
+    <link rel="icon" type="image" href="images/rock-paper-scissors.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex">
+    <h1>Rock Paper Scissors</h1>
+    <p class="label">Your Move:</p>
+    <div class="moves">
+        <div class="wrap">
+            <button class="move-button rock">
+                <img class="move-icon" src="images/rock.svg" alt="">
+            </button>
+            <figcaption>Rock</figcaption>
+        </div>
+        <div class="wrap">
+            <button class="move-button paper">
+                <img class="move-icon" src="images/paper.svg" alt="">
+            </button>
+            <figcaption>Paper</figcaption>
+        </div>
+        <div class="wrap">
+            <button class="move-button scissors">
+                <img class="move-icon" src="images/scissors.svg" alt="">
+            </button>
+            <figcaption>Scissors</figcaption>
+        </div>
+    </div>
+    <p class="autoToggle"></p>
+
+    <div class="results-wrap flex">
+        <p class="js-results verdict hide"></p>
+        <p class="js-moves hide results-move-wrap flex"></p>
+    </div>
+
+    <div class="scoreboard-display flex">
+        <p class="label scoreboard">SCORES:</p>
+        <p class="js-score res"></p>
+        <div class="buttons flex">
+            <button class="reset-button reset">Reset Score</button>
+            <button class="autoplay autoplay-button">AutoPlay</button>
+        </div>
+    </div>
+
+    <script src="r-p-s.js" type="text/javascript"></script>
+</body>
+</html>

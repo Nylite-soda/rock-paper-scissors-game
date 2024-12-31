@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+    margin: 0;
+    flex-direction: column;
+    color: #fff;
+    min-width: 700px;
+    max-width: 1500px;
+}
+
+h1{
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0 25px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em !important;
+    letter-spacing: 1px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.move-icon{
+    height: 70px;
+    width: 70px;
+}
+.move-icon2{
+    height: 120px;
+    width: 120px;
+}
+
+.scissors img{
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(-3deg) brightness(95%) contrast(100%);
+}
+
+.move-button{
+    background-color: rgb(168, 161, 161);
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 1.5em;
+    cursor: pointer;
+}
+.move-button:hover{
+    background-color: #2A0D04;
+    border-color: #fff;
+}
+
+.moves{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+
+.results-wrap{
+    flex-direction: column;
+    justify-content: flex-start !important;
+    width: 80%;
+    border-top: 1px solid #fff;
+    margin-top: 30px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+}
+
+.results-move-wrap{
+    gap: 40px;
+    margin: 0;
+}
+
+.move-grid{
+    display: grid;
+}
+
+.you{
+    text-align: center;
+    /* padding-inline-start: 35px; */
+}
+.player{
+    margin-bottom: 15px;
+}
+
+.verdict{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    background-color: lightgrey;
+    color: #2A0D04;
+    width: 40%;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+.scoreboard{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.scoreboard-display{
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.res{
+    margin-top: 0px;
+    font-size: 1.3em;
+}
+
+.reset, .autoplay {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.reset:hover, .autoplay:hover {
+    background-color: #2A0D04;
+    color: #fff;
+}
+
+.buttons{
+    gap: 20px;
+}
